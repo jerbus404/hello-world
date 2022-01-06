@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jerbus</title>
+        <style>
+            .text{
+                position: absolute;
+                left:50%;
+                transform: translate(-50%, -50%);
+                font-family: 'Ubuntu Mono', monospace;
+                animation-name: example;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+            }
+            body{
+                background-color: black;
+                padding: 0%;
+                margin: 0%;
+            }
+            @keyframes example {
+              0%   {color: red;}
+              25%  {color: rgb(251, 255, 0);}
+              50%  {color: rgb(9, 255, 0);}
+              75%  {color: rgb(0, 132, 255);}
+              100%  {color: rgb(255, 0, 119);}
+
+            }       
+        </style>
+    </head>
+    <body>
+            <h1 class="text" style="top:30%; font-size: 80px;">welcome to jerbus.com</h1>
+            <p class="text" style="top:50%; font-size: 30px;">theres nothing here yet. come back soon for more stuff!</p>
+    </body>
+</html>
