@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jerbus</title>
+        <style>
+            .text{
+                position: absolute;
+                left:50%;
+                transform: translate(-50%, -50%);
+                font-family: 'Ubuntu Mono', monospace;
+                animation-name: example;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+            }
+            .cube{
+                position: absolute;
+                left:50%;
+                transform: translate(-50%, -50%);
+                height: 200.5px;
+                width: 35a0px;
+                top: 65%;
+            }
+            body{
+                background-color: black;
+                padding: 0%;
+                margin: 0%;
+            }
+            @keyframes example {
+              0%   {color: red;}
+              25%  {color: rgb(251, 255, 0);}
+              50%  {color: rgb(9, 255, 0);}
+              75%  {color: rgb(0, 132, 255);}
+              100%  {color: rgb(255, 0, 119);}
+
+            }       
+        </style>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+            <h1 class="text" style="top:30%;">welcome to jerbus.com</h1>
+            <p class="text" style="top:50%;">i hope you enjoy my website</p>
+            <img class="cube" src="cube.gif">
+            <p class="text" style="top:75%;">this is a cube.</p>
+            <a href="jerbus.com/village" class="text" style="top:80%;">click here to go to the village</a>
+            
+    </body>
+</html>
