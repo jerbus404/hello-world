@@ -1,4 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
-body{
-    font-family: 'Ubuntu Mono', monospace;
+        body{
+            background-color: darkgray;
+            font-family: 'Ubuntu Mono', monospace;
+        }
+        .projects{
+            display: grid;
+            grid-template-columns: 300px 300px 300px 300px 300px;
+            gap: 20px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-52%, 0%);
+
+        }
+        .p{
+            height:300px;
+            width: 300px;
+            background-color: white;
+            border-style: solid;
+            border-color: white;
+            text-align: center;
+            padding: 0px;
+            margin: 10px;
+        }
+        .pt{
+            color:rgb(0, 0, 0);
+            text-align: center;
+            margin: 8px;    
+            font-size: xx-large;
+        }
+        .pd{
+            color:darkslategray; 
+            margin:2px;
+            font-size: large;
+        }
+        .pth{
+            height: 160px;
+            width: 160px;
+        }
+        .cs{
+            color: lightgray;
+            margin:2px;
+        }
+.p:hover{
+    background-color: lightblue;
 }
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }        
+a:active { text-decoration: none; }
