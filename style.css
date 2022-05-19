@@ -44,7 +44,7 @@
 .p:hover{
     background-color: rgb(70, 70, 70);
 }
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }        
-a:active { text-decoration: none; }
+a:link { text-decoration: none; color:gray}
+a:visited { text-decoration: none; color:gray}
+a:hover { text-decoration: none; color:gray}        
+a:active { text-decoration: none; color:gray}
