@@ -1,33 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
         body{
-            background-color: darkgray;
+            background-color: rgb(58, 58, 58);
             font-family: 'Ubuntu Mono', monospace;
+            color:white;
+        }
+        #title{
+            font-size: xx-large;
+            text-align: center;
         }
         .projects{
             display: grid;
-            grid-template-columns: 300px 300px 300px 300px 300px;
+            grid-template-columns: 300px 300px 300px 300px 300px 300px;
             gap: 20px;
-            position: absolute;
-            left: 50%;
-            transform: translate(-52%, 0%);
 
         }
         .p{
-            height:300px;
+            height:310px;
             width: 300px;
-            border-style: solid;
             text-align: center;
             padding: 0px;
             margin: 10px;
         }
         .pt{
-            color:rgb(0, 0, 0);
+            color:white;
             text-align: center;
             margin: 8px;    
             font-size: xx-large;
         }
         .pd{
-            color:darkslategray; 
+            color:white; 
             margin:2px;
             font-size: large;
         }
@@ -36,11 +38,11 @@
             width: 160px;
         }
         .cs{
-            color: lightgray;
+            color: darkgray;
             margin:2px;
         }
 .p:hover{
-    background-color: lightblue;
+    background-color: rgb(70, 70, 70);
 }
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
