@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home depo hax!!!!!!!</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        #a{
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 10%;
+            width: auto;
+        }
+        #b{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 20%;
+            width: auto;
+        }
+        #c{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 20%;
+            width: auto;
+        }
+        #container {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(192, 192, 192);
+            width: 50%;
+            height: 2%;
+            opacity: 0;
+        }
+      
+        #bar {
+            background-color: rgb(116, 194, 92);
+            height: 100%;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="button.png" id="a">
+    <img src="hack.png" id="b">
+    <img src="sucess.png" id="c">
+    <div id="container">
+        <div id="bar"></div>
+    </div>
+    <script>
+    document.getElementById('c').hidden = true
+    document.getElementById('bar').style.width = "0%"
+    progress = -5;
+    i=false
+    document.getElementById('a').onclick = function(){
+        progress += 5;
+        document.getElementById('bar').style.width = progress.toString()+"%"
+        document.getElementById('container').style.opacity = "1"
+        if (progress > 100) {
+            document.getElementById('a').hidden = true
+            document.getElementById('b').hidden = true
+            document.getElementById('c').hidden = false
+            document.body.style.backgroundColor = "#EE7125"
+            document.getElementById('container').style.opacity = "0"
+            setTimeout(function(){window.location.replace("admin.html");}, 5000)
+            setInterval(function(){
+            if(i){
+                document.body.style.backgroundColor = "#EE7125"
+                i = false
+            }else{
+                document.body.style.backgroundColor = "#EEAE25"
+            i = true
+            }
+            }, 700)
+        }   
+    }
+    </script>
+</body>
+</html>

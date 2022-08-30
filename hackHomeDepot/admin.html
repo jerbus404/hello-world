@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home depot top secret admin panel</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        #a{
+            left: 65%;
+        }
+        #b{
+            left: 35%;
+        }
+        #c{
+            left: 50%;
+        }
+        #d{
+            left: 50%;
+            top: 80%;
+            height: 15%
+        }
+        #e{
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 10%;
+            width: auto;
+        }
+        .button{
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            height: 30%;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <img src="bucket.png" id="a" class= "button">
+    <img src="theme.png" id="b" class = "button">
+    <img src="free2.png" id="c" class = "button">
+    <img src="CARD.png" id="d" class = "button">
+    <img src="logo.png" id="e" class= "button">
+    <script>
+        document.getElementById('d').hidden = true
+        var crunch = new Audio('crunchy.mp3');
+        var buc = new Audio('bucket.mp3');
+        var bleep = new Audio('bleep.mp3');
+        document.getElementById('a').onclick = function(){
+            buc.play()
+            alert("you have ordered 1 bucket.")
+        }
+        document.getElementById('b').onclick = function(){
+            crunch.play()
+        }
+        document.getElementById('c').onclick = function(){
+            bleep.play()
+            document.getElementById('d').hidden = false
+        }
+        </script>
+</body>
+</html>
