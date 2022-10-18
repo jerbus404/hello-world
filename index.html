@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        img{
+            position: absolute;
+            transform: translate(-50%, -50%);
+            height: 20%;
+            visibility: hidden
+        }
+    </style>
+</head>
+<body>
+    <img src="j1.png" id="j1">
+    <img src="j2.png" id="j2">
+    <img src="j3.png" id="j3">
+    <img src="j4.png" id="j4">
+    <img src="j5.png" id="j5">
+    <img src="j6.png" id="j6">
+    <script>
+        pos = [0, 25, 35, 45, 55, 65, 75]
+        var i = 0
+        setInterval(function(){
+        for (let jerbus = 1; jerbus < 7; jerbus++) {
+            document.getElementById(`j${jerbus}`).style.left = pos[jerbus] + (Math.random()/20)+"%"
+            document.getElementById(`j${jerbus}`).style.top = 50+(Math.random()/20)+"%"
+            document.getElementById(`j${jerbus}`).style.opacity = i/1000
+            document.getElementById(`j${jerbus}`).style.visibility = "visible"
+            i += 1
+        }}, 30)
+    </script>
+    
+</body>
+</html>
